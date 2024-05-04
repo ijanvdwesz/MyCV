@@ -80,7 +80,7 @@ form {
   width: 100%;
 }
 
-.searchForm input[type="text"] {
+.searchForm input[type=text] {
   width: calc(100% - 70px);
   padding: 10px;
   border-top-left-radius: 25px;
@@ -118,12 +118,12 @@ button {
   cursor: pointer;
 }
 
-/*slightly changes color of the button when cursor is on it*/
+/*changes color of the button when cursor is on it*/
 button:hover {
   background-color: #0056b3;
 }
 
-input[type="submit"] {
+input[type=submit] {
   padding: 10px 20px;
   background-color: rgb(239, 208, 30);
   color: #fff;
@@ -131,7 +131,7 @@ input[type="submit"] {
   border-radius: 25px;
 }
 
-input[type="submit"]:hover {
+input[type=submit]:hover {
   background-color: #0056b3;
 }
 
@@ -145,24 +145,64 @@ a {
   text-decoration: none;
 }
 
-/*underlines the links when your cursor is on them*/
 a:hover {
   text-decoration: underline;
 }
 
 .middle {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .searchable {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Horizontally center the content */
+  flex-direction: column;
+  align-items: center;
 }
 
 .searchable h2 {
-  text-align: center; /* Center the text horizontally */
-} /*# sourceMappingURL=index.css.map */
+  text-align: center;
+}
+
+.feeding-chart {
+  background-color: rgb(249, 41, 41);
+  color: white;
+  border-color: white;
+  border-width: 8px;
+  border-style: solid;
+  width: 800px;
+}
+
+.dropdown {
+  width: 680px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.submenu {
+  background-color: rgb(254, 136, 156);
+  color: yellow;
+  padding: 20px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 600px;
+}
+
+.submenu-title {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.submenu-body {
+  display: none;
+}
+
+.lang-logo {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=index.css.map */

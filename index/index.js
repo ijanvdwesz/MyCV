@@ -39,3 +39,41 @@ let currentDate = new Date();
         
         I am motivated by solving problems and creating something that was not
         but Is now,I can say that I like a challenge`
+
+        $(document).ready(function () {
+        $(function () {
+          $(".submenu").hover(
+            //when hovered over
+            function () {
+              //find the sibling element containing this class and slide it up
+              $(this).siblings().find(".submenu-body").slideUp();
+              $(this).find(".submenu-body").slideToggle(); //hides&shows by sliding
+            }
+          );
+        });
+      });
+      let jsExp=document.querySelector('.javascript-experience')
+      jsExp.innerHTML=`
+      Experience includes but is not limited to:
+
+      -Variables and Data types.
+
+      -Control Structures- If, Else-if and Else Statements, For and While Loops.
+
+      -Logical Programming - Operators and Switch Statement.
+
+      -Defensive Programming  Error Handling.
+      - Data Structures - Arrays and Maps.
+
+      -Programming with Built-in and User-defined Functions.
+
+      - DOM Manipulation.
+
+      - Event Handling.
+
+      - JSON.
+
+      -jQuery.
+      
+      - <a href="https://www.hyperiondev.com/portfolio/IV24020013291/">HyperionDev</a>
+      `

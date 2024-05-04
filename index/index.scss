@@ -1,0 +1,169 @@
+/* I didnt like what bootstrap did to my styling and i was struggling to override their styles so i removed their link i hope it wasnt a task requirement*/
+body {
+  font-family: Times New Roman, serif;
+  background-image: url("/Img/portfolio-background.jpg");
+  /*to cover entire background area maintaining my aspect ratio */
+  background-size: cover;
+  /*centers the image both horizontally and verically*/
+  background-position: center center;
+  /* locks my image when scrolling*/
+  background-attachment: fixed;
+  background-color: #f8f8f8;
+  line-height: 1.6;
+  padding: 20px;
+}
+/*resets default margin and padding*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*if font family is not specified the default font-family from body ontop is used*/
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+p {
+  /*when specefied it overrides the body tag*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  /*this collapse is used to remove space between borders of cells*/
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table,
+th,
+td {
+  border: 3px solid #0636f6;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  margin-bottom: 20px;
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchForm input[type="text"] {
+  //makes my searchbar the full lenght of its division then minus the width of the button
+  width: calc(100% - 70px);
+  padding: 10px;
+  //margin-right: 10px;
+  //makes only the left side rounder so i can make my searchfield and button appear to be one rounded bar
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.searchForm button {
+  width: 70px;
+  height: 37px;
+  padding: 10px 20px;
+  background-color: rgb(239, 208, 30);
+  cursor: pointer;
+  //makes only the right side rounder so i can make my searchfield and button appear to be one rounded bar
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.search-icon {
+  height: 30px;
+}
+
+//input[type="text"],
+//input[type="email"],
+//textarea
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  /*makes them "rounder"*/
+  border-radius: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(239, 208, 30);
+  color: #fff;
+  border: black;
+  /*turns cursor to pointer when over button*/
+  cursor: pointer;
+}
+/*changes color of the button when cursor is on it*/
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(239, 208, 30);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+}
+//changes color to blue when hovering over
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.search {
+  display: inline-block;
+  width: 100%;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+//underlines the links when your cursor is on them
+a:hover {
+  text-decoration: underline;
+}
+.middle {
+  //puts the content in the centre
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //stacks the content on top of eachother instead of next to eachother
+  flex-direction: column;
+}
+.searchable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchable h2 {
+  //also centers the headings (they where in additional divs)
+  text-align: center;
+}

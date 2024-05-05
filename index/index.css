@@ -205,4 +205,15 @@ a:hover {
 .lang-logo {
   width: 50px;
   height: 50px;
+}
+
+.me {
+  width: 250px;
+  margin-bottom: 85px;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=index.css.map */

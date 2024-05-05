@@ -162,8 +162,8 @@ a:hover {
 }
 
 .border {
-  border-style: double;
-  border-width: 4px;
+  border-style: double;//makes the border a double line
+  border-width: 4px;//sets the space between the borders
   border-color: rgba(67, 16, 150, 0.793);
   border-radius: 10px;
 }
@@ -218,7 +218,7 @@ a:hover {
   height: 305px;
   margin-bottom: 85px;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: pointer;//makes cursor a pointer
 }
 
 .about {
@@ -235,7 +235,7 @@ a:hover {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 25px;
-  display: none;
+  display: none;//hides it for now(until now)
 }
 
 .contact-links {

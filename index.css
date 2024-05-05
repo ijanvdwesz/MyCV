@@ -1,4 +1,3 @@
-/* I didnt like what bootstrap did to my styling and i was struggling to override their styles so i removed their link i hope it wasnt a task requirement*/
 body {
   font-family: Times New Roman, serif;
   background-image: url("Img/portfolio-background.jpg");
@@ -13,14 +12,12 @@ body {
   padding: 20px;
 }
 
-/*resets default margin and padding*/
 * {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
 }
 
-/*if font family is not specified the default font-family from body ontop is used*/
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -232,7 +229,6 @@ a:hover {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  /*makes them "rounder"*/
   border-radius: 25px;
   display: none;
 }
@@ -245,4 +241,118 @@ a:hover {
 .contact-p-container {
   display: flex;
   align-items: center;
+}
+
+/* adjusts the specified pixels according to screen size */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p,
+  ul,
+  table {
+    font-size: 16px;
+  }
+  .me {
+    width: 145px;
+    height: 178px;
+    margin-top: 0px;
+    margin-bottom: 450px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .menu-backg {
+    background-color: rgba(67, 16, 150, 0.793);
+    color: white;
+    border-color: white;
+    border-width: 8px;
+    border-style: solid;
+    width: 457px;
+  }
+  .dropdown {
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .submenu {
+    background-color: rgb(254, 136, 156);
+    color: yellow;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 347px;
+  }
+  .submenu-title {
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    text-decoration: underline;
+  }
+  .lang-logo {
+    width: 29px;
+    height: 29px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p,
+  ul,
+  table {
+    font-size: 14px;
+  }
+  .me {
+    width: 90.5px;
+    height: 111.6px;
+    margin-top: 0px;
+    margin-bottom: 450px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .menu-backg {
+    background-color: rgba(67, 16, 150, 0.793);
+    color: white;
+    border-color: white;
+    border-width: 8px;
+    border-style: solid;
+    width: max;
+  }
+  .dropdown {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .submenu {
+    background-color: rgb(254, 136, 156);
+    color: yellow;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 217px;
+  }
+  .submenu-title {
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+    text-decoration: underline;
+  }
+  .lang-logo {
+    width: 18.1px;
+    height: 18.1px;
+  }
 }/*# sourceMappingURL=index.css.map */

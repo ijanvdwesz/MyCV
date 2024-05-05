@@ -147,5 +147,13 @@ let currentDate = new Date();
       pythonExpText = pythonExpText.replace(/\n/g, '<br>');
       
       pythonExp.innerHTML = pythonExpText;
+
+      let intervalId = null;
+      $(document).ready(function () {
+        $(".hide-show").click(function () {
+          $(".contact-input").toggle();
+        });
+      });
+
       // got some tips for the searcbar from the following sites and eventually figured it out.....https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
 //https://stackoverflow.com/questions/65112815/how-to-make-a-search-bar-on-javascript-with-for-loop

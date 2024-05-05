@@ -16,6 +16,7 @@ body {
 /*resets default margin and padding*/
 * {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -58,7 +59,7 @@ table {
 table,
 th,
 td {
-  border: 3px solid #0636f6;
+  border: 3px solid rgba(67, 16, 150, 0.793);
 }
 
 th,
@@ -72,6 +73,8 @@ th {
 
 form {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .searchForm {
@@ -91,7 +94,7 @@ form {
   width: 70px;
   height: 37px;
   padding: 10px 20px;
-  background-color: rgb(239, 208, 30);
+  background-color: rgb(254, 136, 156);
   cursor: pointer;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -101,17 +104,9 @@ form {
   height: 30px;
 }
 
-.contact-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  /*makes them "rounder"*/
-  border-radius: 25px;
-}
-
 button {
   padding: 10px 20px;
-  background-color: rgb(239, 208, 30);
+  background-color: rgb(254, 136, 156);
   color: #fff;
   border: black;
   /*turns cursor to pointer when over button*/
@@ -120,19 +115,21 @@ button {
 
 /*changes color of the button when cursor is on it*/
 button:hover {
-  background-color: #0056b3;
+  background-color: rgba(67, 16, 150, 0.793);
 }
 
 input[type=submit] {
   padding: 10px 20px;
-  background-color: rgb(239, 208, 30);
+  background-color: rgb(240, 52, 84);
   color: #fff;
   cursor: pointer;
   border-radius: 25px;
+  width: 80px;
+  align-items: center;
 }
 
 input[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: rgba(67, 16, 150, 0.793);
 }
 
 .search {
@@ -141,7 +138,7 @@ input[type=submit]:hover {
 }
 
 a {
-  color: #007bff;
+  color: rgba(67, 16, 150, 0.793);
   text-decoration: none;
 }
 
@@ -162,12 +159,19 @@ a:hover {
   align-items: center;
 }
 
+.border {
+  border-style: double;
+  border-width: 4px;
+  border-color: rgba(67, 16, 150, 0.793);
+  border-radius: 10px;
+}
+
 .searchable h2 {
   text-align: center;
 }
 
-.feeding-chart {
-  background-color: rgb(249, 41, 41);
+.menu-backg {
+  background-color: rgba(67, 16, 150, 0.793);
   color: white;
   border-color: white;
   border-width: 8px;
@@ -209,11 +213,36 @@ a:hover {
 
 .me {
   width: 250px;
+  height: 305px;
   margin-bottom: 85px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .about {
   display: flex;
   flex-direction: row;
+}
+
+.hide-show:hover {
+  cursor: pointer;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  /*makes them "rounder"*/
+  border-radius: 25px;
+  display: none;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+}
+
+.contact-p-container {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

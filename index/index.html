@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ijan's online CV</title>
     <!--adds my favicon(that little pic next to the title)-->
-    <link rel="icon" href="../Img/goldFloppy.Favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../Img/save-favicon.png" type="image/x-icon" />
   </head>
   <!--Adds my image to background-->
   <body background="../Img/portfolio-background.jpg">
@@ -32,7 +32,7 @@
       <h1 class="searchable">Ijan van der Westhuizen</h1>
       <!--my about me stored inside a <div> in order to display all of it together.the class (searchable ) is then accessed in index.js(using document.querySelectorAll)-->
         <h2>About me</h2>
-      <div class="searchable about">
+      <div class="searchable about border">
         <img src="../Img/me3.jpg"
         class="me">
         <!--i will get better images-->
@@ -40,7 +40,7 @@
         </p>
       </div>
       <!--from here on everything grouped together with a <div class="searchable" is in order to make it display together when searched -->
-      <div class="searchable">
+      <div class="searchable border">
         <h2>Skills</h2>
         <p>
           I am a fast learner with a realistic outlook on programing ,I excell
@@ -60,7 +60,7 @@
         </ul>
       </div>
       <!--Education with some links using <a href="">-->
-      <div class="searchable">
+      <div class="searchable border">
         <h2>Education</h2>
         <p>
           Though im not certified yet i will be after completing Fullstack web
@@ -75,9 +75,9 @@
       </div>
       <!--work experience -->
       
-      <div class="searchable">
+      <div class="searchable border">
         <h2>Work experience</h2>
-  <div class="dropdown feeding-chart searchable">
+  <div class="dropdown menu-backg searchable">
     <div class="submenu">
       <h3 class="submenu-title">JavaScript <img src="../Img/JavaScript-logo.png"
         alt="JavaScript-logo"
@@ -167,9 +167,11 @@
     </div>
     <!--contact details-->
     <div class="searchable">
-      <h2>Contact details</h2>
-      <p>Please fill in the form and ill get back to you shortly</p>
-      <h3>Contact me</h3>
+      
+      <h2 class="hide-show">Contact details</h2>
+      <div class="contact-p-container">
+      <p class="contact-input">Please fill in the form and ill get back to you shortly</p>
+    </div>
       <!--contact me form using POST method for sensitive information and the action is set to my email-->
       <form action="mailto:ijanvdwestz@gmail.com" method="POST">
         <!--Then i add the input fields with a placeholder so u know what to type there and name attribute to identify data entered when submitted -->
@@ -192,16 +194,19 @@
           name="message"
         />
         <!--then finally the submit button looks like this instead of an actual <button>-->
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit"
+        class="contact-input" />
       </form>
       <!--Added alternative to the form by giving user the option to email or phone-->
-      <p>
-        Or <a href="mailto:ijanvdwestz@gmail.com">email me</a> <br />Or Call:<a
+      <div class="contact-links">
+      <p class="contact-input">
+        Or <a href="mailto:ijanvdwestz@gmail.com">email me</a> <br/>Or Call:<a
           href="tel:0746115605"
           >0746115605</a>
           <br>
         <a href="www.linkedin.com/in/ijan-van-der-westhuizen-421980223" target="_blank">LinkedIn</a>
       </p>
+      </div>
     </div>
     <!--links my javascript-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

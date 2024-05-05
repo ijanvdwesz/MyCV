@@ -20,9 +20,9 @@ document.querySelector(".searchForm").addEventListener("submit", (event) => {
   // lets the current index be the first
   $(document).ready(function () {
     let meImgs = [
-      "/Img/me3.jpg",
-    "/Img/me1.jpg",
-    "/Img/me2.jpg",];
+      "Img/me3.jpg",
+    "Img/me1.jpg",
+    "Img/me2.jpg",];
     let currentMeIndex = 0;
     
     // Attaches click event handler to all ".me" images

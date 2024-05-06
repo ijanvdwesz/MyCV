@@ -17,7 +17,7 @@ document.querySelector(".searchForm").addEventListener("submit", (event) => {
     }
   });
 });
-  // lets the current index be the first
+  // sets me images to an array
   $(document).ready(function () {
     let meImgs = [
       "Img/me3.jpg",
@@ -30,13 +30,13 @@ document.querySelector(".searchForm").addEventListener("submit", (event) => {
       // Updates the source of the clicked ".me" image
       $(this).attr("src", meImgs[currentMeIndex]);
       
-      // Increment the index for the next image
+      // Increments the index for the next image
       currentMeIndex = (currentMeIndex + 1) % meImgs.length;
     });
   });
 
 let aboutIntroDisplay=document.querySelector('.about-intro')
-
+//this calculates my age based on the current year in order to display in my about info
 let currentDate = new Date();
         let currentYear = currentDate.getFullYear();
 
@@ -46,7 +46,7 @@ let currentDate = new Date();
         // Calculates age
         var age = currentYear - dob.getFullYear();
 
-        // Display age
+        //displays my about info with my age inserted
         aboutIntroDisplay.innerText =`I am a ${age} year old aspiring Web Developer from Thabazimbi, Limpopo, driven by a passion for coding and technology. Currently, I am on a journey of continuous learning, striving to expand my knowledge and skills in Web development & Software Engineering.
 
         I find immense satisfaction in tackling complex problems and transforming ideas into tangible solutions. Each challenge I encounter fuels my curiosity and drives me to push the boundaries of what I can achieve. I am relentless in my pursuit of mastery, always eager to learn new technologies and methodologies that empower me to create innovative and impactful projects.
@@ -67,6 +67,7 @@ let currentDate = new Date();
           );
         });
       });
+      //generates my experience for js
       let jsExp = document.querySelector('.javascript-experience');
       let jsExperienceText = `
           Experience includes but is not limited to:
@@ -86,9 +87,11 @@ let currentDate = new Date();
           You can Find examples on my:
           <a href="https://github.com/ijanvdwesz">Github</a>
       `;
+      //then replaces the new lines with line breaks
       jsExperienceText = jsExperienceText.replace(/\n/g, '<br>');
       
       jsExp.innerHTML = jsExperienceText;
+      //does the same for htmlexp cssexp ect (all the exp)
       htmlExp=document.querySelector('.html-experience')
       let htmlExperienceText=`
       Experience includes but is not limited to:
@@ -147,7 +150,7 @@ let currentDate = new Date();
       pythonExpText = pythonExpText.replace(/\n/g, '<br>');
       
       pythonExp.innerHTML = pythonExpText;
-
+//hides and shows (toggles ) my contact form and info
       let intervalId = null;
       $(document).ready(function () {
         $(".hide-show").click(function () {

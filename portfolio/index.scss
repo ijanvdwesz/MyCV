@@ -1,4 +1,4 @@
-/* I didnt like what bootstrap did to my styling and i was struggling to override their styles so i removed their link i hope it wasnt a task requirement*/
+
 body {
   font-family: Times New Roman, serif;
   background-image: url("Img/portfolio-background.jpg");
@@ -12,13 +12,12 @@ body {
   line-height: 1.6;
   padding: 20px;
 }
-/*resets default margin and padding*/
+//sets margin for all elements
 * {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
 }
-/*if font family is not specified the default font-family from body ontop is used*/
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -36,7 +35,6 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin-bottom: 15px;
-
 }
 
 ul {
@@ -72,9 +70,10 @@ th {
 
 form {
   margin-bottom: 20px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
+
 .searchForm {
   display: flex;
   justify-content: space-between;
@@ -90,6 +89,7 @@ form {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
+
 .searchForm button {
   width: 70px;
   height: 37px;
@@ -127,10 +127,11 @@ input[type="submit"] {
   width: 80px;
   align-items: center;
 }
-//changes color to blue when hovering over
+//changes color to this one when hovering over
 input[type="submit"]:hover {
-  background-color:rgb(67, 16, 150, 0.793);
+  background-color: rgba(67, 16, 150, 0.793);
 }
+
 .search {
   display: inline-block;
   width: 100%;
@@ -144,6 +145,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .middle {
   //puts the content in the centre
   display: flex;
@@ -152,43 +154,45 @@ a:hover {
   //stacks the content on top of eachother instead of next to eachother
   flex-direction: column;
 }
+
 .searchable {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.border{
-  border-style: double;
-  border-width: 4px;
-  border-color:rgba(67, 16, 150, 0.793);
-  border-radius:10px;
 
+.border {
+  border-style: double;//makes the border a double line
+  border-width: 4px;//sets the space between the borders
+  border-color: rgba(67, 16, 150, 0.793);
+  border-radius: 10px;
 }
+
 .searchable h2 {
-  //also centers the headings (they where in additional divs)
   text-align: center;
 }
 
 .menu-backg {
-  background-color:rgba(67, 16, 150, 0.793);
+  background-color: rgba(67, 16, 150, 0.793);
   color: white;
   border-color: white;
   border-width: 8px;
-  border-style: solid; //sets boreder style to solid for it to appear
+  border-style: solid;//sets boreder style to solid for it to appear
   width: 800px;
 }
 
 .dropdown {
-  width: 680px; //makes the width 550 pixels
-  margin: 0 auto; //and clears the margin
+  width: 680px;
+  margin: 0 auto;
   border-radius: 10px;
 }
+
 .submenu {
   background-color: rgb(254, 136, 156);
   color: yellow;
-  padding: 20px 30px; //creates padding
+  padding: 20px 30px;
   border-radius: 8px;
-  cursor: pointer; //makes cursor a pointer
+  cursor: pointer;
   margin-bottom: 5px;
   width: 600px;
 }
@@ -197,47 +201,182 @@ a:hover {
   display: flex;
   justify-content: center;
   font-size: 25px;
-  text-decoration: underline; //underlines headings
+  text-decoration: underline;
 }
+//hides the menu items this is neccessary for accordian effect
 .submenu-body {
   display: none;
-  //hides the menu items this is neccessary for accordian effect
 }
-.lang-logo{
+
+.lang-logo {
   width: 50px;
-  height:50px;
+  height: 50px;
 }
+
 .me {
-width:250px;
-height:305px;
-margin-bottom:85px;
-border-radius:10px;
-cursor:pointer;
+  width: 250px;
+  height: 305px;
+  margin-bottom: 85px;
+  border-radius: 10px;
+  cursor: pointer;//makes cursor a pointer
 }
-.about{
+
+.about {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
-.hide-show:hover{
-  cursor:pointer;
+
+.hide-show:hover {
+  cursor: pointer;
 }
-//input[type="text"],
-//input[type="email"],
-//textarea
+
 .contact-input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  /*makes them "rounder"*/
   border-radius: 25px;
-  display:none;
+  display: none;//hides it for now(until now)
+}
 
-}
-.contact-links{
-  display:flex;
+.contact-links {
+  display: flex;
   align-items: center;
 }
-.contact-p-container{
-  display:flex;
+
+.contact-p-container {
+  display: flex;
   align-items: center;
+}
+
+/* adjusts the specified pixels according to screen size */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p,
+  ul,
+  table {
+    font-size: 16px;
+ 
+  }
+  .me {
+    width: 145px;
+    height: 178px;
+    margin-top:0px;
+    margin-bottom: 450px ;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.menu-backg {
+  background-color: rgba(67, 16, 150, 0.793);
+  color: white;
+  border-color: white;
+  border-width: 8px;
+  border-style: solid;
+  width: 457px;
+}
+
+.dropdown {
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.submenu {
+  background-color: rgb(254, 136, 156);
+  color: yellow;
+  padding: 20px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 347px;
+}
+
+.submenu-title {
+  display: flex;
+  justify-content: center;
+  font-size: 14.5px;
+  text-decoration: underline;
+}
+
+.lang-logo {
+  width: 29px;
+  height: 29px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p,
+  ul,
+  table {
+    font-size: 14px;
+    
+  }
+  .me {
+    width: 90.5px;
+    height: 111.6px;
+    margin-top:0px;
+    margin-bottom: 450px ;
+
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.menu-backg {
+  background-color: rgba(67, 16, 150, 0.793);
+  color: white;
+  border-color: white;
+  border-width: 8px;
+  border-style: solid;
+  width:max;
+}
+
+.dropdown {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.submenu {
+  background-color: rgb(254, 136, 156);
+  color: yellow;
+  padding: 20px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 217px;
+}
+
+.submenu-title {
+  display: flex;
+  justify-content: center;
+  font-size: 9px;
+  text-decoration: underline;
+}
+.lang-logo {
+  width: 18.1px;
+  height: 18.1px;
+}
 }

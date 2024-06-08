@@ -112,6 +112,7 @@ let currentDate = new Date();
       htmlExperienceText = htmlExperienceText.replace(/\n/g, '<br>');
       
       htmlExp.innerHTML = htmlExperienceText;
+      //css experience section
       let cssExp=document.querySelector('.css-experience')
       let cssExperienceText=`
       Experience includes but not limited to
@@ -129,6 +130,7 @@ let currentDate = new Date();
       `;cssExperienceText = cssExperienceText.replace(/\n/g, '<br>');
       
       cssExp.innerHTML = cssExperienceText;
+      //python experience section
       let pythonExp=document.querySelector('.python-experience')
       let pythonExpText = `
           Experience includes but is not limited to:
@@ -150,6 +152,33 @@ let currentDate = new Date();
       pythonExpText = pythonExpText.replace(/\n/g, '<br>');
       
       pythonExp.innerHTML = pythonExpText;
+
+// Java Experience Section
+let javaExp = document.querySelector('.java-experience');
+let javaExperienceText = `
+    Experience includes but is not limited to:
+    - Java Basics: Understanding of syntax, variables, and data types.
+    - Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs.
+    - Methods: Creating and utilizing methods for modular code.
+    - Java IO: File handling using InputStream, OutputStream, Reader, and Writer classes.
+    - Object-Oriented Programming (OOP): Classes, Objects, Inheritance, Encapsulation, and Abstraction.
+    - Advanced OOP: Interfaces, Abstract Classes, and Design Patterns.
+    - Recursion: Writing and optimizing recursive algorithms.
+    - Defensive Programming: Exception handling using try-catch blocks, creating custom exceptions.
+    - Refactoring: Improving code structure and readability without altering functionality.
+    - Collections Framework: Using and understanding Lists, Sets, Maps, and their implementations like ArrayList, HashSet, HashMap.
+    - Algorithms: Implementing hashing, shuffling, sorting, and searching algorithms.
+    - Computer Science Fundamentals: Understanding Big O notation, algorithm efficiency, and complexity analysis.
+    Examples on:
+    <a href="https://github.com/ijanvdwesz"> Github</a>
+    Courses:
+    <a href="https://www.hyperiondev.com/portfolio/IV24020013291/">HyperionDev</a>
+    as well as self-taught knowledge from various online resources and projects.
+`;
+javaExperienceText = javaExperienceText.replace(/\n/g, '<br>');
+
+javaExp.innerHTML = javaExperienceText;
+
 //hides and shows (toggles ) my contact form and info
       let intervalId = null;
       $(document).ready(function () {
@@ -158,5 +187,5 @@ let currentDate = new Date();
         });
       });
 
-      // got some tips for the searcbar from the following sites and eventually figured it out.....https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+      // for tips on the searchbar visit:https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
 //https://stackoverflow.com/questions/65112815/how-to-make-a-search-bar-on-javascript-with-for-loop
